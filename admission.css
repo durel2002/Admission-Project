@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+
+
+
+
+/* .container {
+    
+    display: flex;
+    
+     1200px 
+    max-width: 1200px;
+     margin: 0 auto;
+} */
+
+.leftContainer {
+    position: fixed;
+ 
+    margin-top: 32px;
+    /* display: none; */
+    /* border: 1px solid red; */
+    width: auto; 
+
+
+
+
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    /* 16px */
+    gap: 28px;
+    /* padding-right: 16px; */
+    /* width: auto; */
+    position: relative;
+    /* position: fixed */
+}
+
+/* the vertical line */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: rgb(102, 98, 102);
+    top: 14px;
+    bottom: 14px;
+    transform: translateX(15.7px);
+    z-index: -1;
+    /* left: 50%; */
+    /* margin-left: -3px; */
+}
+
+
+img {
+    background-color: rgb(241, 234, 234);
+    border-radius: 50%;
+    object-fit: contain;
+    width: 28px;
+    height: 28px;
+    
+}
+
+
+.item {
+    display: flex;
+    /* border: 1px solid red; */
+    /* padding: 10px 40px; */
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+    color:blueviolet ;
+}
+
+.text {
+    width: 100%;
+}
+
+.rightContainer {
+    margin-top: 32px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid red; */
+    width:100% ;
+    margin-left: 228px;
+    padding-left: 42px;
+    border-left: 1px solid rgb(102, 98, 102);
+    min-height: 100vh;
+}
+ 
+/* input{
+    width: 80% !important ;
+} */
+/* .pic{
+    width: 48.5% !important;
+} */
+.heading{
+    width: auto;
+    text-align: center;
+}
+ .first {
+    /* 180px */
+    /* 60px */
+    margin-top: 60px;
+}
+/* .personalSection{
+position: relative; 
+} */
+.image{
+  display:block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    /* border-radius: 50%; */
+    border: 1px solid pink;
+    /* 82% */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* margin-top: 8px; */
+    /* margin-bottom: auto; */
+    /* right: 12.5rem;
+    top: 3.75rem; */
+    /* right: 200px;
+    top: 60px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
+.cert{
+    width: auto;
+}
+
+ .gceAlevel{
+    display: flex;
+    flex-direction: column;
+ 
+   
+    /* width:460px; */
+    /* height: max-content; */
+    /* border: 1px solid rgb(202, 13, 13); */
+    /* padding: 0px; */
+    border-radius: 20px;
+    border: dashed 1px orange;
+    /* padding: 6px; */
+ 
+}
+    
+.settings{
+    box-sizing: content-box;
+     width:316px;
+     margin: auto;
+    border: dashed 1px orange;
+       border-radius: 10px;
+       padding: 22px;
+}
+/* .two{
+  border-left: solid 1px orange;
+  padding-left: 2px;
+} */
+.allsetting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 35px;
+}
+
+
+
+
+
+    /*
+
+.alevelH{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+
+
+}
+.Subject{
+        border: 1px solid rgb(202, 13, 13);
+        gap: 2px;
+}
+.subject{
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.alevelWrapper{
+    width: 60%;
+    border: 1px solid rgb(202, 13, 13); 
+     margin-bottom: 32px;
+} 
+*/
+ 
+
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+@media (min-width:1200px) {
+    .settings{
+        /* justify-content: space-around; */
+        margin-left: 30px;
+    }
+
+    
+}
+
+
+@media (max-width:1004px) {
+.Container{
+    flex-direction: column !important;
+   }
+.rightContainer{
+    margin-left: 0px;
+    padding: 12px;
+     border-left: none; 
+}
+.leftContainer{
+    position: relative;
+    padding:0 32px;
+ 
+  
+}
+.timeline{
+    max-width: 488px;
+    margin: auto;
+    flex-direction: row;
+    column-gap: 2px;
+    justify-content: space-between;
+}    
+.item{
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
+    align-content: center;
+}
+
+.text{
+    display: none;
+    font-size: 0.76rem;
+}
+
+
+.timeline::after {
+    width: 100%;
+    height: 1px; 
+    transform: none;
+
+}
+
+.image{
+    margin: auto;
+}
+
+/* .settings{
+ margin-left: 0px; 
+}*/
+}
+
+
+
+.tab{
+    display: none;
+}
+
+
+.item.active{  
+    /* background-color: blueviolet; */
+    color: black;
+}
